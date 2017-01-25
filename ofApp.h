@@ -35,14 +35,14 @@
 	ofAppとofSoundStreamは、別threadで動くが、
 	audioIn()とaudioOut()は、同時に動かないので、変数の共有などが可。
 	
-	How to check
+	How I checked
 		t_in_AudioIn, t_in_AudioOut をそれぞれの関数の頭で記録し、
 		処理量をほぼzeroとした時に、
-		1. audioIn()でprintf();
+		1. audioIn()でprintf(); した時
 			t_in_AudioOut + samplingTime = t_in_AudioIn.
 			samplingTime:23ms when 44.1kHz, BufferSize = 1024
 			
-		2. audioOut()でprintf();
+		2. audioOut()でprintf(); した時
 			t_in_AudioIn ≒ t_in_AudioOut.
 		
 	

@@ -54,6 +54,7 @@ void ofApp::setup(){
 	soundStream.listDevices();
 	if( (soundStream_Input_DeviceId == -1) || (soundStream_Output_DeviceId == -1) ){
 		ofExit();
+		return;
 	}
 	// soundStream.setDeviceID(soundStream_DeviceId);
 	/* set in & out respectively. */
