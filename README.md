@@ -26,6 +26,10 @@ audioIn()側に持ってくると、overflowを起こす前に、monitor sound�
 	BEHRINGER ヘッドフォンアンプ HA400
 
 
+##Device 2
+*	Audio I/F  
+	Focusrite Clarett 2Pre(thunderbolt)
+
 ##note
 
 
